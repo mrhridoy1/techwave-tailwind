@@ -1,5 +1,7 @@
 # techwave-tailwind
 
-# npm install
+how to use
 
-# npx @tailwindcss/cli -i ./src/css/style.css -o ./src/css/main.css --watch
+1. npm install
+
+2. npm run dev
