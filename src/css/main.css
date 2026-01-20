@@ -422,9 +422,6 @@
   .bg-primary {
     background-color: var(--color-primary);
   }
-  .bg-\[url\(\.\/src\/img\/hero\/mobile-bg\.png\)\] {
-    background-image: url(./src/img/hero/mobile-bg.png);
-  }
   .bg-\[url\(\/src\/img\/hero\/mobile-bg\.png\)\] {
     background-image: url(/src/img/hero/mobile-bg.png);
   }
@@ -491,11 +488,14 @@
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
   }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
+  .pb-15 {
+    padding-bottom: calc(var(--spacing) * 15);
+  }
   .pb-24 {
     padding-bottom: calc(var(--spacing) * 24);
-  }
-  .pb-25 {
-    padding-bottom: calc(var(--spacing) * 25);
   }
   .pb-28 {
     padding-bottom: calc(var(--spacing) * 28);
@@ -642,11 +642,6 @@
       gap: calc(var(--spacing) * 10);
     }
   }
-  .md\:bg-\[url\(\.\/src\/img\/hero\/hero-bg\.png\)\] {
-    @media (width >= 48rem) {
-      background-image: url(./src/img/hero/hero-bg.png);
-    }
-  }
   .md\:bg-\[url\(\/src\/img\/hero\/hero-bg\.png\)\] {
     @media (width >= 48rem) {
       background-image: url(/src/img/hero/hero-bg.png);
@@ -660,6 +655,11 @@
   .md\:pt-25 {
     @media (width >= 48rem) {
       padding-top: calc(var(--spacing) * 25);
+    }
+  }
+  .md\:pb-25 {
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 25);
     }
   }
   .md\:text-start {
