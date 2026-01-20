@@ -422,11 +422,11 @@
   .bg-primary {
     background-color: var(--color-primary);
   }
-  .bg-\[url\(\.\/src\/img\/hero\/hero-bg\.png\)\] {
-    background-image: url(./src/img/hero/hero-bg.png);
-  }
   .bg-\[url\(\.\/src\/img\/hero\/mobile-bg\.png\)\] {
     background-image: url(./src/img/hero/mobile-bg.png);
+  }
+  .bg-\[url\(\/src\/img\/hero\/mobile-bg\.png\)\] {
+    background-image: url(/src/img/hero/mobile-bg.png);
   }
   .bg-gradient {
     background-image: var(--background-image-gradient);
@@ -645,6 +645,11 @@
   .md\:bg-\[url\(\.\/src\/img\/hero\/hero-bg\.png\)\] {
     @media (width >= 48rem) {
       background-image: url(./src/img/hero/hero-bg.png);
+    }
+  }
+  .md\:bg-\[url\(\/src\/img\/hero\/hero-bg\.png\)\] {
+    @media (width >= 48rem) {
+      background-image: url(/src/img/hero/hero-bg.png);
     }
   }
   .md\:px-9\.5 {
