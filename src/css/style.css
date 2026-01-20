@@ -13,9 +13,25 @@
   --text-8xl: 6rem;
   --text-8xl--line-height: 1;
   --default-font-family: var(--font-sans);
+
+  --animate-scale: scale 2s ease-out infinite;
+  @keyframes scale {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
 }
 
 @layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-secondary;
   }
