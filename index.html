@@ -14,14 +14,14 @@
           <div class="tw-header__logo">
             <a href="#"><img width="200" src="./src/img/techwave.png" alt="Techwave" /></a>
           </div>
-          <nav class="tw-header__nav">
+          <nav class="tw-header__nav hidden lg:block">
             <ul class="flex items-center gap-8">
               <li><a class="text-white hover:text-primary transition-all duration-200 ease-in-out text-base font-medium py-8.5 inline-block" href="#">About</a></li>
               <li><a class="text-white hover:text-primary transition-all duration-200 ease-in-out text-base font-medium py-8.5 inline-block" href="#">Episodes</a></li>
               <li><a class="text-white hover:text-primary transition-all duration-200 ease-in-out text-base font-medium py-8.5 inline-block" href="#">Host</a></li>
             </ul>
           </nav>
-          <div class="tw-header__btn">
+          <div class="tw-header__btn hidden lg:block">
             <a href="#" class="tw-btn tw-btn-primary">
               Subscribe
               <span>
@@ -30,6 +30,16 @@
                 </svg>
               </span>
             </a>
+          </div>
+          <div class="tw-header__mobile py-3.5 lg:hidden">
+            <span class="text-white text-4xl">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1">
+                <line x1="20" y1="14" x2="4" y2="14"></line>
+                <line x1="20" y1="6" x2="4" y2="6"></line>
+                <line x1="20" y1="10" x2="4" y2="10"></line>
+                <line x1="20" y1="18" x2="4" y2="18"></line>
+              </svg>
+            </span>
           </div>
         </div>
       </div>
@@ -91,7 +101,7 @@
           <div class="line mt-19 mb-19"></div>
 
           <div class="tw-about__fact">
-            <div class="grid grid-cols-4 gap-5">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-5">
               <div class="fact-item text-center">
                 <h3 class="text-5xl text-primary font-black">150K+</h3>
                 <p class="text-p uppercase mt-3.5">Monthly Listeners</p>
@@ -119,8 +129,8 @@
           <div class="tw-choose__heading text-center mb-13">
             <h2 class="section-title">Why Choose TechWave</h2>
           </div>
-          <div class="tw-choose__list grid grid-cols-3 gap-7">
-            <div class="row-span-2 flex flex-col justify-center bg-[#351165]/40 px-9.5 py-10 rounded-4xl">
+          <div class="tw-choose__list grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+            <div class="lg:row-span-2 flex flex-col justify-center bg-[#351165]/40 px-9.5 py-10 rounded-4xl">
               <div class="tw-choose__thumb">
                 <img src="./src/img/choose/headphone.png" alt="" />
               </div>
@@ -129,7 +139,7 @@
                 <p class="text-p mt-3">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
               </div>
             </div>
-            <div class="col-span-2 flex flex-col justify-center bg-[#351165]/40 px-9.5 py-10 rounded-4xl">
+            <div class="lg:col-span-2 flex flex-col justify-center bg-[#351165]/40 px-9.5 py-10 rounded-4xl">
               <div class="tw-choose__thumb">
                 <img src="./src/img/choose/device.png" alt="" />
               </div>
@@ -138,7 +148,7 @@
                 <p class="text-p mt-3">Listen on the go with seamless mobile experience and offline downloads.</p>
               </div>
             </div>
-            <div class="col-span-2 flex flex-col justify-center bg-[#351165]/40 px-9.5 py-10 rounded-4xl">
+            <div class="lg:col-span-2 flex flex-col justify-center bg-[#351165]/40 px-9.5 py-10 rounded-4xl">
               <div class="tw-choose__thumb">
                 <img src="./src/img/choose/location.png" alt="" />
               </div>
@@ -147,7 +157,7 @@
                 <p class="text-p mt-3">Connect with tech enthusiasts from over 120 countries worldwide.</p>
               </div>
             </div>
-            <div class="col-span-2 flex flex-col justify-center bg-[#351165]/40 px-9.5 py-10 rounded-4xl">
+            <div class="lg:col-span-2 flex flex-col justify-center bg-[#351165]/40 px-9.5 py-10 rounded-4xl">
               <div class="tw-choose__thumb">
                 <img src="./src/img/choose/zap-fast.png" alt="" />
               </div>
@@ -175,7 +185,7 @@
           <div class="tw-epi__heading text-center">
             <h2 class="section-title">Featured Episodes</h2>
           </div>
-          <div class="tw-epi__list grid grid-cols-3 gap-7 mt-10">
+          <div class="tw-epi__list grid md:grid-cols-2 lg:grid-cols-3 gap-7 mt-10">
             <div class="tw-epi__item bg-[#250D44] rounded-3xl">
               <div class="thumb relative">
                 <img class="rounded-t-3xl w-full" src="./src/img/epi/img-1.png" alt="" />
@@ -256,16 +266,16 @@
             <div class="tw-host__heading text-center">
               <h2 class="section-title">Meet the Host</h2>
             </div>
-            <div class="tw-host__card bg-[#351165]/40 px-10 py-10 rounded-4xl flex items-center gap-6 mt-10">
+            <div class="tw-host__card bg-[#351165]/40 px-10 py-10 rounded-4xl flex flex-col md:flex-row items-center gap-6 mt-10">
               <div class="host-thumb shrink-0">
                 <img src="./src/img/host/host.png" alt="" />
               </div>
-              <div class="host-content">
+              <div class="host-content text-center md:text-start">
                 <h3 class="text-3xl font-bold text-white">Alex Kumar</h3>
                 <p class="mt-3.5 text-p">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
 
                 <div class="social mt-6">
-                  <ul class="flex items-center gap-2.5">
+                  <ul class="flex items-center justify-center md:justify-start gap-2.5">
                     <li class="w-10 h-10 flex items-center justify-center rounded-full border border-accent hover:bg-accent">
                       <a class="inline-block" href="#"><img src="./src/img/social/linkedin.png" alt="" /></a>
                     </li>
@@ -291,7 +301,7 @@
       <div class="container">
         <div class="tw-footer__wrap flex flex-col items-center">
           <div class="tw-footer__logo">
-            <img width="440" src="./src/img/techwave.png" alt="" />
+            <img class="w-[220px] md:w-[440px]" src="./src/img/techwave.png" alt="" />
           </div>
           <div class="footer-social mt-8">
             <ul class="flex items-center gap-10">
